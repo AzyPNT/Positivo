@@ -47,7 +47,7 @@ function removeSelecinadoDoAluno(evento){
 }
 
 
-function removerAluno(aluno){
+ function removerAluno(aluno){
     
     var verificaRemove = aluno.classList;
     lixeira.addEventListener('click',function(sucesso){
