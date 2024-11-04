@@ -1,0 +1,112 @@
+
+
+.tabela{
+    margin:20px auto;
+    border: none;
+    border-collapse: collapse;
+    
+}
+
+.tabela-seleciona{
+    cursor: pointer;
+}
+
+
+.tabela > thead{
+    background-color: lightgrey;
+}
+
+
+ tr{
+    margin: 0px;
+    padding: 0px;
+}
+
+ td, th{
+    border: 1px solid black;
+    padding: 7px;
+    vertical-align: baseline;
+    text-align: center;
+}
+
+.tipo-nome{
+    padding: 10px;
+}
+
+.tipo-nome input{
+    padding: 5px;
+    width: 380px;
+    margin-left: 5px;
+}
+
+.tipo-numero label{
+    margin: 10px;
+    
+}
+
+.tipo-numero input{
+    padding: 5px;
+    width: 100px;
+    margin: 10px;
+}
+
+.adicionar{
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid var(--corFonteDestaque);
+    color: var(--corFonteDestaque);
+    border-radius: 5px;
+}
+
+.adicionar:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--corDeFundo);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.aluno-aprovado{
+    background-color: var(--corAlunoAprovado);
+    font-weight: bold;
+    color: var(--corFonteDestaque);
+}
+
+.aluno-recuperacao{
+    background-color: black;
+    font-weight: bold;
+    color: var(--corFonteDestaque);
+}
+
+.aluno-reprovado{
+    background-color: var(--corAlunoReprovado);
+    font-weight: bold;
+    color: var(--corFonteDestaque);
+}
+
+.notas-erro{
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    list-style: none;
+}
+
+.notas-certas{
+    color: green;
+    font-weight: bold;
+    padding: 5px;
+    list-style: none;
+}
+
+.seleciona-aluno{
+    background-color: rgb(255, 215, 205);
+}
+
+.fadeOut{
+    display: none;
+}
+
+.nota{
+    
+}
+

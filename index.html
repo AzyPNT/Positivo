@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="ico/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/positivo.css">
+    <link rel="stylesheet" href="estilo/tabela.css">
+    <link rel="stylesheet" href="remove-filtra-aluno.css">
+    <title>Colegio Positivo</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="ico/favicon.ico" alt="Logo do Colegio Positivo">
+            <h1 class="titulo">Colégio Positivo</h1>
+    </header>
+    <main>
+        <section class="conteudo">
+            <section class="infors">
+                <h2 class="sub-titulo">Média escolar</h2>
+                <p>Nota acima de 7.0  <strong >Aprovado</strong> .</p>
+                <p>Nota entre 5.0 e 7.0 <strong>Recuperação</strong> .</p>
+                <p>Nota abaixo de 5.0  <strong>Reprovado</strong> .</p>
+                
+            </section>
+            <section >
+                <button class="selecionar excluir">Remover alunos</button>
+                <button  class="lixeira invisivel"><img src="imagens/bin_icon-icons.com_53677.ico" alt="lixeira" ></button>
+                <button class="invisivel sair">Sair</button>
+                <label for="filtra"  class="filtra-aluno">Buscar aluno</label>
+                <input type="search" name="filtra" id="filtra" class="filtra-aluno" placeholder="Digite o nome do aluno">
+            </section>
+            <section>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Primeira nota</th>
+                            <th>Segunda nota</th>
+                            <th>Terceira nota</th>
+                            <th>Quarta nota</th>
+                            <th>Média</th>
+                            <th>Situação</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela-alunos" class="excluir">
+                        <tr class="alunos">
+                            <td class="info-nome">Osvaldo</td>
+                            <td class="info-nota">10</td>
+                            <td class="info-nota">10</td>
+                            <td class="info-nota">10</td>
+                            <td class="info-nota">10</td>
+                            <td class="info-media"></td>
+                            <td class="info-situacao"></td>
+                        </tr>
+                        <tr class="alunos">
+                            <td class="info-nome">Carolina</td>
+                            <td class="info-nota">7.8</td>
+                            <td class="info-nota">7.6</td>
+                            <td class="info-nota">5.9</td>
+                            <td class="info-nota">8.5</td>
+                            <td class="info-media"></td>
+                            <td class="info-situacao"></td>
+                        </tr>
+                        <tr class="alunos">
+                            <td class="info-nome">Carlos</td>
+                            <td class="info-nota">5.9</td>
+                            <td class="info-nota">8.5</td>
+                            <td class="info-nota">1.9</td>
+                            <td class="info-nota">2.5</td>
+                            <td class="info-media"></td>
+                            <td class="info-situacao"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <section>
+                    <ul id="mensagem-de-erro"></ul>
+                    <form class="adiciona-aluno">
+                        <div class="tipo-nome">
+                            <label for="nome-do-aluno">Nome do alundo</label>
+                            <input type="text" name="nome" id="nome" required placeholder="Pedro">
+                        </div>
+                        <div class="tipo-numero">
+                            <div>
+                                <label for="primeira-nota">1° nota</label>
+                                <input type="number" name="primeira" id="primeira" class="nota" required placeholder="2.6">
+                            </div>
+
+                            <div>
+                                <label for="segunda-nota">2° nota</label>
+                                <input type="number" name="segunda" id="segunda" class="nota" required placeholder="9.6">
+                            </div>
+
+                            <div>
+                                <label for="terceira-nota">3° nota</label>
+                                <input type="number" name="terceira" id="terceira" class="nota" required placeholder="5.3">
+                            </div>
+
+                            <div>
+                                <label for="quarta-nota">4° nota</label>
+                                <input type="number" name="quarta" id="quarta" class="nota" required placeholder="5.5">
+                            </div>
+                        </div>
+                        <button class="adicionar">Adicionar</button>
+
+                    </form>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Colégio Positivo</p>
+    </footer>
+    <script src="js/calcula-media.js"></script>
+    <script src="js/adiciona-aluno.js"></script>
+    <script src="js/valida.js"></script>
+    <script src="js/remove.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/filtra.js"></script>
+
+</body>
+</html>

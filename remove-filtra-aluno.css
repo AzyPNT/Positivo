@@ -1,0 +1,54 @@
+
+.lixeira > img{
+    width: 40px;
+}
+.lixeira{
+    border-radius: 6px;
+    position: relative;
+    left: 70%;
+    vertical-align: middle;
+}
+
+.lixeira:hover{
+    cursor: pointer;
+}
+
+.selecionar{
+    margin-top: 20px;
+    position: relative;
+    left: 10px;
+    padding: 10px;
+    border: 1px solid var(--corFonteDestaque);
+    color: var(--corFonteDestaque);
+    border-radius: 5px;
+}
+
+.selecionar:hover,.sair:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: var(--corDeFundo);
+    font-weight: bold;
+}
+
+.invisivel{
+    display: none;
+ }
+ 
+ .sair{
+     padding: 10px;
+     margin: 15px;
+     border: 1px solid var(--corFonteDestaque);
+     color: var(--corFonteDestaque);
+     border-radius: 5px;
+ 
+ }
+
+
+
+.filtra-aluno{
+    display:block;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    width: 240px;
+}
