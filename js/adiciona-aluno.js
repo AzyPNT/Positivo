@@ -1,10 +1,23 @@
 var adicionar = document.querySelector('.adicionar');
 var tabela = document.querySelector('#tabela-alunos');
-
+var removeAlunosExemplos = document.querySelectorAll('.exmplos')
+var formulario = document.querySelector('.adiciona-aluno');
 
 adicionar.addEventListener("click", function(event){
     event.preventDefault();
-    var formulario = document.querySelector('.adiciona-aluno');
+
+    if(!validaForm(formulario)){
+        alert('preencha os campos')
+        return
+    }
+
+    if(removeAlunosExemplos.length > 1){{
+        removeAlunosExemplos.forEach( (element) => {
+            element.remove()
+        })
+    }}
+    
+    
     if(validaForm(formulario)){
         var alunoForm = obterDadosDoFormulario(formulario);
         var alunoTr = montaTr(alunoForm);

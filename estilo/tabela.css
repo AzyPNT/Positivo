@@ -4,6 +4,7 @@
     margin:20px auto;
     border: none;
     border-collapse: collapse;
+    text-transform: capitalize;
     
 }
 
