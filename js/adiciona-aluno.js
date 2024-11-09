@@ -32,9 +32,11 @@ adicionar.addEventListener("click", function(event){
 
 
 function obterDadosDoFormulario(form){
+    let name = form.nome.value
+    name = name.toLowerCase()
 
     var aluno = {
-        nome: form.nome.value,
+        nome: name,
         primeiraNota: form.primeira.value,
         segundaNota: form.segunda.value,
         terceiraNota: form.terceira.value,
